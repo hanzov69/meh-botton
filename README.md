@@ -52,3 +52,9 @@ By default this will run every two hours, on the hour. Which means it may not ru
 With this in mind, it should hit the site 12 times a day, which seems like *more* than enough.
 
 I **really** don't recommend messing with this value, particularly to something more aggressive unless you know what you're doing and are willing to risk the wrath of mediocrebot.
+
+### ARM?
+Why, you may ask yourself, would I go to the effort of making this stupid gadget work on an ARM platform, specifically that one?
+The answer is easy- I have a k8s cluster running on a buncha BeagleBone Blacks. That's why.
+<a href="https://imgur.com/a/UKxoY3F" alt="BBB Cluster">
+        <img src="https://i.imgur.com/SrGglvq.jpg" /></a>
