@@ -12,6 +12,8 @@ function buttonClicker(){
             .wait('.meh-button button')
             .screenshot('10.png')
             .click('.meh-button button')
+            //only because low powered machines struggle a bit
+            .wait(5000)
             .wait('#user')
             .screenshot('20.png')
             .type('#user', username)
