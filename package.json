@@ -7,7 +7,7 @@
         "nightmare": "*"
     },
     "scripts": {
-        "prestart": "sh prestart.sh"
+        "prestart": "sh prestart.sh",
         "start": "node app.js"
     }
 }
