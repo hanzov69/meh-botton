@@ -1,5 +1,12 @@
 {
+    "name": "meh-botton",
+    "license": "WTFPL",
+    "description": "a simple script to click the meh button, downsampled from https://github.com/freshlogic/meh-dash-button",
+    "repository": "https://github.com/hanzov69/meh-botton",
     "dependencies": {
         "nightmare": "*"
+    },
+    "scripts": {
+        "start": "node app.js"
     }
 }

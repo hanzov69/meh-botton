@@ -1,0 +1,10 @@
+.gitignore
+README.md
+.DS_Store
+Dockerfile
+package-lock.json
+node_modules
+.dockerignore
+LICENSE
+CREDITS
+*.png

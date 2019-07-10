@@ -1,13 +1,10 @@
 var Nightmare = require('nightmare');
 
-var username = 'hanzov69bot';
-var password = 'iamabigbotyesiam';
+var username = process.env.MEHUSERNAME;
+var password = process.env.MEHPASSWORD;
 var site = 'https://meh.com';
 
-var lastPress = new Date(0);
-
-    if (Date.now() - lastPress > 5000) {
-        lastPress = Date.now();
+function buttonClicker(){
         console.log('go and click');
 
         new Nightmare()
@@ -33,3 +30,4 @@ var lastPress = new Date(0);
             });
 
     };
+buttonClicker();
