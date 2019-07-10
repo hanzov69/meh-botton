@@ -1,4 +1,4 @@
-FROM node/node:8
+FROM node:8
 MAINTAINER hanzov69 (Christian Sullivan)
 RUN apt-get update &&\
     apt-get install -y libgtk-3-0 libgtk2.0-0 libgconf-2-4 \
