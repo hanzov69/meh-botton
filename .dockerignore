@@ -2,9 +2,11 @@
 README.md
 .DS_Store
 Dockerfile
+Dockerfile.armhf
 package-lock.json
 node_modules
 .dockerignore
 LICENSE
 CREDITS
 *.png
+hooks
