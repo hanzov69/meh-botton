@@ -1,2 +1,7 @@
-Based on a fun project found here: https://meh.com/forum/topics/i-hacked-the-amazon-dash-button-to-click-meh-at-meh-com-instead-of-ordering-tide
-Original Source here: https://github.com/freshlogic/meh-dash-button
+Based on a fun project by @shawn (Shawn Miller) found here:
+https://meh.com/forum/topics/i-hacked-the-amazon-dash-button-to-click-meh-at-meh-com-instead-of-ordering-tide
+Original Source here:
+https://github.com/freshlogic/meh-dash-button
+
+cron work done by camilin87, details are here: https://hub.docker.com/r/camilin87/node-cron
+and here: https://github.com/camilin87/node-cron

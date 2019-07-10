@@ -17,7 +17,10 @@ COPY ./templates/setupCron.sh /tmp/setupCron.sh
 RUN chmod +x /tmp/setupCron.sh
 
 CMD ["/tmp/setupCron.sh"]
-ENV TASK_SCHEDULE='*/5 * * * *'
+# NOTE- there is a space at the end of the below string, do not omit!
+# This will default to running every 2 hours
+ENV TASK_SCHEDULE='0 */2 * * * '
+
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN npm install
