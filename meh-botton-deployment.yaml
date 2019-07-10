@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meh-botton
+  labels:
+    env: prod
+spec:
+  containers:
+  - name: meh-botton
+    image: hanzov69/meh-botton:latest
+    imagePullPolicy: IfNotPresent
+    env:
+      - name: MEHUSERNAME
+        value: "your username"
+      - name: MEHPASSWORD
+        value: "yourpassword"
