@@ -19,6 +19,8 @@ function buttonClicker(){
             .type('#user', username)
             .type('#password', password)
             .click('form button')
+            //only because low powered machines struggle a bit
+            .wait(5000)
             .wait('.meh-button')
             .screenshot('30.png')
             .run(function(err, nightmare) {
