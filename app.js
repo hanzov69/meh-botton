@@ -1,28 +1,23 @@
-var Nightmare = require('nightmare');
+const Nightmare = require('nightmare');
 
-var username = process.env.MEHUSERNAME;
-var password = process.env.MEHPASSWORD;
+var session  = process.env.MEHSESSION;
 var site = 'https://meh.com';
 
 function buttonClicker(){
         console.log('go and click');
 
         new Nightmare()
-            .goto(site)
-            .wait('.meh-button button')
+	    //.goto(site)
+            .cookies.set({
+              url: "https://meh.com",
+              name: "session.meh.com",
+              value: session
+            })
+	    .goto(site)
+	    .wait('.meh-button button')
             .screenshot('10.png')
             .click('.meh-button button')
-            //only because low powered machines struggle a bit
-            .wait(5000)
-            .wait('#user')
             .screenshot('20.png')
-            .type('#user', username)
-            .type('#password', password)
-            .click('form button')
-            //only because low powered machines struggle a bit
-            .wait(5000)
-            .wait('.meh-button')
-            .screenshot('30.png')
             .run(function(err, nightmare) {
                 if (err) {
                     return console.log(err);
