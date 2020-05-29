@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:19.10
 MAINTAINER hanzov69 (Christian Sullivan)
 RUN apt-get update &&\
     apt-get install -y libgtk-3-0 libgtk2.0-0 libgconf-2-4 \
     libasound2 libxtst6 libxss1 libnss3 xvfb cron logrotate curl
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 RUN mkdir -p /usr/src/app
 COPY ./templates/log-rotation /etc/logrotate.d/my-cron-job
